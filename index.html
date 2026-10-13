@@ -487,7 +487,7 @@ body{margin:0;background:var(--ground);color:var(--text);font-family:'Archivo','
 
 <main id="work-main">
   <section class="hero">
-    <h1><span class="h-cond">Selected work</span><span class="h-wide">Six problems, taken from ambiguity to a working result.</span></h1>
+    <h1><span class="h-cond">Selected work</span><span class="h-wide">Four companies, six years, and problems taken from ambiguity to a working result.</span></h1>
     <p>Most of this work happened inside Neobridge, a 50–100 person enterprise blockchain group, working directly with its CEO, CTO, CPO and Head of Sales. Client names are withheld.</p>
   </section>
 
@@ -642,7 +642,7 @@ body{margin:0;background:var(--ground);color:var(--text);font-family:'Archivo','
     var b = document.createElement('button');
     b.className = 'node' + (c.kind === 'earlier' ? ' earlier' : '');
     b.setAttribute('aria-pressed', 'false');
-    b.innerHTML = '<span class="date">' + esc(c.date) + '</span><span class="dot"></span><span class="title">' + esc(c.short) + '</span><span class="tag">' + (c.kind === 'earlier' ? 'Before Neobridge' : 'Case ' + c.id) + '</span>';
+    b.innerHTML = '<span class="date">' + esc(c.date) + '</span><span class="dot"></span><span class="title">' + esc(c.short) + '</span><span class="tag">' + (c.kind === 'earlier' ? 'Before Neobridge' : 'Neobridge') + '</span>';
     b.setAttribute('aria-label', c.date + ': ' + c.title);
     b.addEventListener('click', function () { open(current === i ? -1 : i, true); });
     track.appendChild(b);
@@ -691,7 +691,7 @@ body{margin:0;background:var(--ground);color:var(--text);font-family:'Archivo','
         '<div class="acc-panel" id="acc-' + c.id + '-' + i + '" role="region"><div class="acc-inner"><div class="acc-body">' + s[1] + '</div></div></div></div>';
     }).join('');
     return '<article class="case">' +
-      '<div class="case-top"><span>' + esc(c.id) + ' / 0' + caseCount + '</span><span class="chip">' + esc(c.date) + '</span></div>' +
+      '<div class="case-top"><span>Neobridge · case study</span><span class="chip">' + esc(c.date) + '</span></div>' +
       '<h2>' + esc(c.title) + '</h2><p class="standfirst">' + esc(c.standfirst) + '</p><p class="facts">' + facts + '</p>' +
       '<figure class="vis"><div class="vis-box"><div class="vis-plot"></div></div><div class="vis-foot"><figcaption aria-live="polite"></figcaption>' +
       '<div class="toggle" role="group" aria-label="Show before or after"><button type="button">Before</button><button type="button">After</button></div></div></figure>' +
